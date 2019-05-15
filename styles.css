@@ -1,0 +1,185 @@
+/* All CSS written by Jeffrey B. Madden 2019. */
+
+body {
+   line-height:1em;
+   margin:0px;
+   border:0px;
+   padding:12px;
+   color:#808080;
+   background-color:#dfdfdf;
+}
+
+a {
+   padding-right:8px;
+   font-family:Arial;
+}
+
+a:last-child {
+   padding-right:0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   line-height:1em;
+   margin:0px;
+   border:0px;
+   padding:0px;
+}
+
+h3 {
+   margin:0px 0px 0.3em 0px;
+}
+
+.button {
+   display:inline-block;
+   height:1em;
+   line-height:1em;
+   margin:0px;
+   border:1px solid #a0a0a0;
+   border-radius:4px;
+   padding:4px 6px 4px 6px;
+   font-family:Arial;
+   font-size:1em;
+   color:#606060;
+   background-color:#c0c0e0;
+   cursor:default;
+   opacity:0.8;
+}
+
+.button:hover { opacity:1.0; }
+
+.add, .rem {
+   width:24px;
+   height:24px;
+   border-radius:50%;
+   padding:0px;
+   background-image:url('images/add_rem_05.png');
+   background-repeat:no-repeat;
+}
+
+.add { background-position:right top; }
+.rem { background-position:left top; }
+
+.box {
+   display:inline-block;
+   position:relative;
+   float:left;
+   min-width:20em;
+   min-height:20em;
+   margin:12px;
+   border:1px solid #d0d0d0;
+   padding:12px;
+   background-color:White;
+}
+
+.atom {
+   display:block;
+   min-height:1em;
+   margin:0px;
+   border:0px;
+   padding:12px;
+}
+
+#status {
+   display:block;
+   min-height:3em;
+   max-height:6em;
+   width:100%;
+   padding:2px;
+   font-size:0.8em;
+   color:#b0b0b0;
+   border:1px solid #e0e0e0;
+   overflow-y:scroll;
+}
+
+#status span {
+   display:block;
+}
+
+.field {
+   display:inline-block;
+   height:1em;
+   line-height:1em;
+   margin:0px;
+   border:1px solid #e0e0e0;
+   padding:4px;
+   font-size:1em;
+   color:#808080;
+}
+
+.field:hover {
+   border:1px solid #c0c0c0;
+}
+
+#recent_quote_symbol {
+   font-size:2em;
+}
+
+#recent_quote_item {
+   display:inline-block;
+   line-height:1em;
+   margin:0px;
+   border:0px;
+   padding:0px;
+   font-size:2.5em;
+}
+
+#recent_quote_diff {
+   display:inline-block;
+   line-height:1em;
+   margin:0px 0px 0px 1em;
+   border:0px;
+   padding:0px;
+   color:Red;
+   font-size:1.5em;
+   opacity:0.6;
+}
+
+#recent_quote_time_date {
+   display:block;
+}
+
+#recent_quotes {
+   width:500px;
+   margin:0px;
+   border:1px solid #e0e0e0;
+   padding:0px;
+   border-collapse:collapse;
+}
+
+#recent_quotes tbody tr:hover {
+   background-color:#f4f4f4;
+}
+
+#recent_quotes thead td {
+   height:1em;
+   border:1px solid #e0e0e0;
+   padding:2px;
+}
+
+#recent_quotes tbody td {
+   height:1.2em;
+   padding:2px 2px 2px 8px;
+}
+
+#symbol_field_list {
+   display:block;
+   margin:0px;
+   border:0px;
+   padding:0px;
+}
+
+.graph_wrap {
+   display:block;
+   position:relative;
+   margin:0px 0px 2em 0px;
+   border:0px;
+   padding:0px;
+}
+
+.graph_wrap canvas {
+   display:block;
+   position:absolute;
+   margin:0px;
+   border:0px;
+   padding:0px;
+}
