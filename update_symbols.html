@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<!-- All code written by Jeffrey B. Madden 2019. -->
+<head>
+<title>Update Symbols</title>
+<meta name="description" content=""  />
+<meta name="keywords" content=""  />
+<meta name="author" content="Jeffrey B. Madden"  />
+<meta http-equiv="content-type" content="text/html;charset=utf-8"  />
+<link rel="stylesheet" type="text/css" href="styles.css"  />
+</head>
+
+<body>
+
+<div class="box">
+   <div class="atom">
+      <a href="stock_quotes.html">Stock Quotes</a>
+      <a href="update_symbols.html">Update Symbols</a>
+      <a href="add_quote.html">Add Quote</a>
+   </div>
+
+   <div class="atom">
+      <div id="status"><span>Ready...</span></div>
+   </div>
+
+   <div id="symbol_field_list">
+      <div class="atom">
+         <input type="text" value="Symbol" id="symbol_entry" class="field" onclick="clearField(this)"  />
+         <input type="text" value="Company Name" id="name_entry" class="field" onclick="clearField(this)"  />
+         <div class="button" onclick="addCompany(this)">Add Symbol</div>
+      </div>
+   </div>
+
+   <div class="atom">
+      <div class="button add" style="opacity:0.5;"></div>
+      <div class="button rem" onclick="addEntry(this)"></div>
+   </div>
+</div>
+
+<script type="text/javascript" src="central.js"></script>
+<script type="text/javascript" src="update_mechanics.js"></script>
+
+</body>
+</html>
