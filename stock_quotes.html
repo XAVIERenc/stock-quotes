@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<!-- All code written by Jeffrey B. Madden 2019. -->
+<head>
+<title>Stock Quotes</title>
+<meta name="description" content=""  />
+<meta name="keywords" content=""  />
+<meta name="author" content="Jeffrey B. Madden"  />
+<meta http-equiv="content-type" content="text/html;charset=utf-8"  />
+<link rel="stylesheet" type="text/css" href="styles.css"  />
+<script type="text/javascript" src="graphs_creator.js"></script>
+</head>
+
+<body>
+
+<div class="box">
+   <div class="atom">
+      <a href="stock_quotes.html">Stock Quotes</a>
+      <a href="update_symbols.html">Update Symbols</a>
+      <a href="add_quote.html">Add Quote</a>
+   </div>
+
+   <div class="atom">
+      <div id="status"><span>Ready...</span></div>
+   </div>
+
+   <div class="atom">
+      <input type="text" value="Enter symbol" id="quote_entry" class="field" onclick="clearField(this)"  />
+      <div class="button" onclick="getQuote()">Get Quote</div>
+   </div>
+
+   <div class="atom">
+      <div class="button" onclick="clearQuotes()">Clear</div>
+   </div>
+</div>
+
+<div class="box">
+   <div class="atom">
+      <span id="recent_quote_symbol">~</span>
+   </div>
+
+   <div class="atom">
+      <span id="recent_quote_item">$0.00</span>
+      <span id="recent_quote_diff"></span>
+      <span id="recent_quote_time_date"></span>
+   </div>
+
+   <div class="atom">
+      <h3>Past Quotes</h3>
+
+      <table id="recent_quotes">
+         <thead>
+            <tr><td>Quote</td><td>Date-Time</td><td>Increase-Decrease</td></tr>
+         </thead>
+
+         <tbody>
+            <tr><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td></tr>
+         </tbody>
+      </table>
+   </div>
+</div>
+
+<div class="box">
+   <div class="atom">
+      <h2>Charts</h2>
+   </div>
+
+   <div class="atom">
+      <div id="charts_list"></div>
+   </div>
+</div>
+
+<script type="text/javascript" src="central.js"></script>
+<script type="text/javascript" src="mechanics.js"></script>
+
+</body>
+</html>
